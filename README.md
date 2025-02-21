@@ -49,8 +49,8 @@
 - Controll RESET APIs for his clients
 - Controll subdomain or his domain
 
-#### **🔹Note: 
-- Once the partner registers on the partner panel, he will obtain all the default data and can modify it later, such as changing the shipping price, - - articles, or rest API settings for customers who will register in his subdomain.
+    #### **🔹Note: 
+    - Once the partner registers on the partner panel, he will obtain all the default data and can modify it later, such as changing the shipping price, -  - articles, or rest API settings for customers who will register in his subdomain.
 
 ### **🔹 Partner client site **
 - Same base client site ( With changed data by this partner )
