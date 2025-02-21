@@ -4,63 +4,54 @@
 
 ## **🔹 Overview**
 
-- The project consists of multiple integrated platforms to facilitate seamless game and credit purchases.
-- Each platform serves a distinct role, providing functionality for different user types.
+### **🔹 Admin panel pages**
+- Statistics
+- Categories
+- Sub Categories
+- Games
+- Coupons
+- Orders
+- Admins
+- Partners
+- Clients
+- Partner's clients
+- Settings
+- Commissions
+- Referrals
+- Referrals Levels
+- Content Management to manage frontend content
+- Complaints
+- Support Chat
+- All Chats between Partners and Clients
+- Blogs
+- Comments
+- Replies
+- Reviews
+- Reports
+- Payment Getways
+- Transactions
+- Mails between admins
 
----
+### **🔹 Client site pages**
+- Home ( Header, Footer, Main categories sections contains game cards )
+- Blogs ( All Blogs page, blog details, comments, replies, like, dislike )
+- Chatbox ( fixed chat icon to chat with support )
+- Help center
+- Policy terms
+- Categories
+- Game cards
+- Checkout ( choice number and payment, any another info .... )
+- Profile ( info, wallet, settings, transactions, deposit, reviews, referrals )
+- RESET API ( secret token for each client to use it in External API )
 
-## **🔹 Main Components**
+### **🔹 Partner admin panel & Partner client site **
+- Same admin panel ( With the addition of games, sections, articles, and virtual front-end content )
+- Controll RESET APIs for his clients
+- Controll subdomain or his domain
 
-### **1️⃣ Server (Laravel API Backend)**
-- Centralized backend managing all data and operations.
-- Handles authentication (JWT, OAuth) and user roles.
-- Manages game listings, offers, and purchase transactions.
-- Manages wallet system (deposits, withdrawals, transactions).
-- Controls partner subdomains and domain linking via **Cloudflare API**.
-- Provides API endpoints for clients to integrate external services.
-- Supports **Live Chat Support** for customer service.
+#### **🔹Note: 
+- Once the partner registers on the partner panel, he will obtain all the default data and can modify it later, such as changing the shipping price, - - articles, or rest API settings for customers who will register in his subdomain.
 
-### **2️⃣ Admin Panel (Next.js Dashboard)**
-- Allows administrators to manage partners, users, and transactions.
-- Provides insights through detailed analytics and reports.
-- Enables moderation of game offers and pricing strategies.
-- Manages website content (articles, privacy policies, contact information).
-- Controls support tickets and **Live Chat Support**.
-
-### **3️⃣ Partner Panel (Next.js Partner Dashboard)**
-- Enables partners to create and manage their own storefronts.
-- Allows customization of offers, pricing, and promotional campaigns.
-- Provides transaction history and financial summaries.
-- Supports domain customization (subdomain or custom domain).
-- Offers access to API for game purchase automation.
-
-### **4️⃣ Client Website (Next.js Main Storefront)**
-- Main website for game purchases and wallet management.
-- Displays available games, offers, and discounts.
-- Provides a smooth checkout process with multiple payment options.
-- Includes blog section for **articles** and gaming updates.
-- Features **Privacy Policies** and **Contact Us** pages.
-- Integrates **Live Chat Support** for customer inquiries.
-
-### **5️⃣ Partner Client Website (Next.js Custom Storefronts)**
-- Auto-generated store for each partner with their branding.
-- Contains all main store functionalities but customized for partners.
-- Supports wallet-based transactions and API-based purchases.
-- Provides partner-customized game listings and promotions.
-- Includes **articles, privacy policies, contact us, and live chat**.
-
----
-
-## **🔹 Additional Features**
-
-- ✅ **Article Management:** Allows admins to publish gaming-related articles.
-- ✅ **Privacy Policy & Terms Pages:** Legal compliance for all storefronts.
-- ✅ **Contact Us Page:** Customers can reach out via forms or direct chat.
-- ✅ **Live Chat Support:** Available on all platforms for real-time assistance.
-- ✅ **API Access:** Allows external services to integrate and automate game purchases.
-
----
-
-### **🎯 Next Steps?**
-- ✅ Review and approve the structure.
-- ✅ Proceed with implementation and UI/UX design.
+### **🔹 Partner client site **
+- Same base client site ( With changed data by this partner )
+- Each client in this subdomain site can also obtain a REST API 
